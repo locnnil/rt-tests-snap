@@ -88,6 +88,7 @@ apps:
 
   hwlatdetect:
     command: usr/sbin/hwlatdetect
+    plugs: [ mount-observe, system-trace, cpu-latency-qos-control ]
   
   get-cyclictest-snapshot:
     command: usr/sbin/get_cyclictest_snapshot
